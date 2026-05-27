@@ -1,0 +1,31 @@
+config local
+	option enable '1'
+	option port '7547'
+	option username 'easycwmp'
+	option password 'easycwmp'
+	option authentication 'Digest'
+	option logging_level '3'
+	option log_to_file '0'
+	option log_file_name '/var/log/easycwmp.log'
+	option log_file_size '512'
+	option netlink_enable '1'
+	option retry_min_wait_interval '5'
+	option retry_interval_multiplier '2000'
+	option use_nat_detect '0'
+
+config acs
+	option url ''
+	option username ''
+	option password ''
+	option ssl_verify '0'
+	option periodic_enable '0'
+	option periodic_interval '300'
+	option periodic_time '2000-01-01T00:00:00'
+
+config device
+	option manufacturer ''
+	option oui ''
+	option product_class ''
+	option serial_number ''
+	option hardware_version ''
+	option software_version ''

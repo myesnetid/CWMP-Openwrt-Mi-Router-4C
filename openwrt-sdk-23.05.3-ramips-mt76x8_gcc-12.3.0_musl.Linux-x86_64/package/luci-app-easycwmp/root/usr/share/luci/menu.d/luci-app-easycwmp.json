@@ -1,0 +1,13 @@
+{
+  "admin/services/easycwmp": {
+    "title": "EasyCWMP",
+    "order": 60,
+    "action": {
+      "type": "view",
+      "path": "easycwmp/config"
+    },
+    "depends": {
+      "acl": ["luci-app-easycwmp"]
+    }
+  }
+}

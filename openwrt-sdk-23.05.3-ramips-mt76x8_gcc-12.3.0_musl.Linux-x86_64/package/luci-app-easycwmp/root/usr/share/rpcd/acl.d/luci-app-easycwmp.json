@@ -1,0 +1,18 @@
+{
+  "luci-app-easycwmp": {
+    "description": "Grant access to easycwmp configuration",
+    "read": {
+      "uci": ["easycwmp"],
+      "ubus": {
+        "service": ["list"],
+        "uci": ["get"]
+      }
+    },
+    "write": {
+      "uci": ["easycwmp"],
+      "ubus": {
+        "uci": ["set", "commit"]
+      }
+    }
+  }
+}
